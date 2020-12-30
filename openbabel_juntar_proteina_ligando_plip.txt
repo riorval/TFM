@@ -1,0 +1,10 @@
+Teniendo pdb individual del ligando y pdb/mol2 de la proteina 
+
+obabel 5loxdeNDGA_protein.pdb NDGA_1.pdb -O 5lox_NDGA_1_noH.pdb -j -d
+
+obabel 5lox6n2wChainB.pdb NDGA_1.pdb -O 5lox6n2w_NDGA_1_noH.pdb -j -d 
+
+
+separar el pdbqt de flavonoles sólo las primeras 50 moléculas
+
+obabel output_flavonoles_5lox6n2wB.pdbqt -opdb -m -f1 -l50
